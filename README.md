@@ -49,33 +49,6 @@ Full conversation history
 Real-time status updates during processing
 
 
-🏗️ System Architecture
-User Query
-    ↓
-┌─────────────────┐
-│  Router Agent   │ ← STM + LTM
-└─────────────────┘
-         ↓
-    ┌────┴────┬──────────┬──────────────┐
-    ↓         ↓          ↓              ↓
-Overview   Doubt    Research      Memory Update
- Agent     Agent     Agent        (Async/Background)
-    ↓         ↓          ↓
-  Fast     Fast    ┌──────────────┐
- Response Response │ Cache Check  │
-                   │      ↓       │
-                   │ Hybrid       │
-                   │ Retrieval    │
-                   │      ↓       │
-                   │ Parent Chunk │
-                   │ Expansion    │
-                   │      ↓       │
-                   │ Personalized │
-                   │ Context      │
-                   │      ↓       │
-                   │ Streaming    │
-                   │ Response     │
-                   └──────────────┘
 
 🔬 Research Agent Deep Dive
 The core innovation of this system. Unlike simple RAG, it implements:
@@ -295,7 +268,7 @@ Memory architectures for personalization
 Production-grade RAG optimization
 Real-time AI system design
 
-Contact: [Your Email/LinkedIn]
+Contact: tarun2oo5singh@gmail.com
 
 🙏 Acknowledgments
 Special thanks to the LangChain and LangGraph communities for excellent tooling and documentation.
